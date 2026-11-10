@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parabéns! • Acesso Confirmado</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #08090e;
+            --surface: rgba(18, 22, 34, 0.85);
+            --gold: #d4af37;
+            --text: #f0f2f8;
+            --muted: #9aa2b8;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .container { max-width: 760px; margin: 0 auto; padding: 3rem 1.5rem; text-align: center; }
+        .success-badge {
+            display: inline-block;
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            animation: bounce 1s infinite alternate;
+        }
+        @keyframes bounce { from { transform: translateY(0); } to { transform: translateY(-8px); } }
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(2rem, 4vw, 2.8rem);
+            color: var(--gold);
+            margin-bottom: 1rem;
+        }
+        .subtitle {
+            font-size: 1.15rem;
+            color: var(--muted);
+            margin-bottom: 2.5rem;
+        }
+        .card {
+            background: var(--surface);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            border-radius: 16px;
+            padding: 2.5rem 2rem;
+            text-align: left;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+        }
+        .card h2 {
+            font-family: 'Cinzel', serif;
+            font-size: 1.3rem;
+            color: #fff;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            padding-bottom: 0.8rem;
+        }
+        .steps { list-style: none; }
+        .steps li {
+            display: flex;
+            align-items: flex-start;
+            gap: 1rem;
+            margin-bottom: 1.2rem;
+            font-size: 1rem;
+        }
+        .step-num {
+            background: var(--gold);
+            color: #000;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+        .btn {
+            display: block;
+            background: linear-gradient(135deg, #d4af37, #b8860b);
+            color: #000;
+            text-decoration: none;
+            padding: 1.2rem 2rem;
+            border-radius: 8px;
+            font-weight: 700;
+            font-size: 1.15rem;
+            text-align: center;
+            box-shadow: 0 6px 25px rgba(212, 175, 55, 0.4);
+            transition: transform 0.2s;
+        }
+        .btn:hover { transform: translateY(-2px); }
+        .footer {
+            border-top: 1px solid rgba(255, 255, 255, 0.08);
+            padding: 2rem 1.5rem;
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="success-badge">🎉</div>
+        <h1>Pagamento Confirmado!</h1>
+        <p class="subtitle">Sua compra foi aprovada com sucesso. Seu acesso aos materiais está liberado.</p>
+
+        <div class="card">
+            <h2>Próximos Passos Imediatos:</h2>
+            <ul class="steps">
+                <li>
+                    <span class="step-num">1</span>
+                    <div>
+                        <strong>Verifique sua Caixa de Entrada</strong><br>
+                        Enviamos os dados de acesso e a nota fiscal para o e-mail informado no checkout. Verifique também a pasta de spam.
+                    </div>
+                </li>
+                <li>
+                    <span class="step-num">2</span>
+                    <div>
+                        <strong>Acesse Seus Arquivos Agora</strong><br>
+                        Clique no botão abaixo para ir direto à área de membros ou página de download dos seus livros e conteúdos.
+                    </div>
+                </li>
+                <li>
+                    <span class="step-num">3</span>
+                    <div>
+                        <strong>Suporte Dedicado ao Aluno</strong><br>
+                        Se precisar de ajuda com o download ou tiver qualquer dúvida, nosso suporte oficial está disponível por e-mail.
+                    </div>
+                </li>
+            </ul>
+
+            <a href="https://kiwify.app/exemplo-sorriso-abismo" target="_blank" class="btn">
+                ACESSAR MEU PRODUTO AGORA ➔
+            </a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p><strong>Bruno Olivaes Publicações ME</strong> • CNPJ: 12.345.678/0001-90</p>
+        <p>Suporte: brunoolivaes@gmail.com</p>
+    </footer>
+</body>
+</html>
